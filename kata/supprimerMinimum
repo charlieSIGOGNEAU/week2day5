@@ -1,0 +1,19 @@
+
+
+
+def supprimer (tableau)
+    min=tableau.min
+    tableau.each_with_index do |val,i|
+        if val==min
+            tableau.delete_at(i)
+            break
+        end
+    end
+    puts tableau
+end
+
+puts "donne moi un tableau et j'enleverai la plus petit valeur. exemple attendu: [5,3,2,1,4,1]"
+input = gets.chomp
+tableau = eval(input)  # Convertit la chaîne en tableau
+supprimer(tableau)
+[5,3,2,1,4,1]

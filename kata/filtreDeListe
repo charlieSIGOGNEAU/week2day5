@@ -1,0 +1,9 @@
+def filtre(tableau)
+    tableau_filtre=tableau.select{|element| element.is_a?(Integer)}
+    puts tableau_filtre
+end
+
+
+puts "entrer un tableau avec des nombre et des mot, je vous renverez que les nombre positif"
+tableau=eval(gets.chomp)
+filtre(tableau)
